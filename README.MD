@@ -18,6 +18,7 @@
 > compiler
     
     node.js
+    babel
 
 > linguagen
     

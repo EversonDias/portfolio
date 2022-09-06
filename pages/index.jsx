@@ -5,11 +5,11 @@ import { Header } from "../src/patterns/header";
 
 /*Importação de temas e para aplicação de tema */
 import { ThemeProvider } from "styled-components";
-import light from './styles/themes/light';
-import dark from "./styles/themes/dark";
+import light from '../src/styles/themes/light';
+import dark from "../src/styles/themes/dark";
 
 /*styles globais */
-import { Global } from "./styles/global"
+import { Global } from "../src/styles/global"
 
 /*modules react */
 import { useState } from "react";
