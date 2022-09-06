@@ -1,14 +1,24 @@
+# Projeto desenvolvido em next.js
+![next](public/img/readme/next_js.png)
+
+# Demonstração
+![demo](public/img/readme/demo.gif)
+
 > library
-    - styled-Components
-    - react-Switch
-    - react
-    - nookies
+    
+    styled-Components
+    react-Switch
+    react
+    nookies
 
 > Framework
-    - next.js
+    
+    next.js
 
 > compiler
-    - node.js
+    
+    node.js
 
 > linguagen
-    - JavaScript
+    
+    JavaScript
