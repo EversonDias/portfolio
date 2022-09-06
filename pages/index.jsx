@@ -16,6 +16,7 @@ import { useState } from "react";
 
 /*modules nookies responsável por salvar a definição de tema */
 import { setCookie, parseCookies } from "nookies";
+import Projects from "../src/patterns/projects";
 
 
 export default function Home(props) {
@@ -40,6 +41,9 @@ export default function Home(props) {
             <Global />
             <NextHead />
             <Header themeChange={themeChange} />
+            <main>
+                <Projects/>
+            </main>
         </ThemeProvider>
     )
 }
