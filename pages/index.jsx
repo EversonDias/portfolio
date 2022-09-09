@@ -2,6 +2,7 @@
 obs: NextHead esta localizada as informações de meta do next/head  */
 import NextHead from "../src/components/head";
 import { Header } from "../src/patterns/header";
+import Footer from "../src/patterns/footer";
 
 /*Importação de temas e para aplicação de tema */
 import { ThemeProvider } from "styled-components";
@@ -23,7 +24,7 @@ export default function Home(props) {
 
     /* essa função serve para salvar o tema na variável theme
     obs: quando a pagina e carregada ela faz a alteração de acordo com os cooks*/
-    const [theme, setTheme] = useState(props.userTheme === 'light'?(light):(dark))
+    const [theme, setTheme] = useState(props.userTheme === 'dark'?(dark):(light))
 
     /*esta função serve para alterar os temas */
     const themeChange = () => {
@@ -31,10 +32,10 @@ export default function Home(props) {
     } 
 
     /*salvando as configurações de temas no cooks */
-    setCookie(null, 'userTheme', theme.title, {
-        maxAge: 86400 * 30,
-        path: '/'
-    })
+   setCookie(null, "userTheme", theme.title, {
+    maxAge: 86400 * 30,
+    path: "/"
+   })
 
     return (
         <ThemeProvider theme={theme}>
@@ -44,12 +45,12 @@ export default function Home(props) {
             <main>
                 <Projects/>
             </main>
+            <Footer/>
         </ThemeProvider>
     )
 }
 
-
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context){
     const cookies = parseCookies(context)
 
     return{
