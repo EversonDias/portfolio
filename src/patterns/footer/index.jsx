@@ -5,9 +5,10 @@ const Container = styled.footer`
   position: absolute;
   bottom: 0;
   background-color: ${props => props.theme.colors.header};
-  height: 45px;
+  height: 58px;
   width: 100%;
   text-align: center;
+  color: ${props => props.theme.colors.text};
   
   #container{
     display: flex;
@@ -15,9 +16,14 @@ const Container = styled.footer`
   }
   p {
     color: ${props => props.theme.colors.text};
+    margin-top: 5px;
+  }
+  p{
+    margin-top: 5px;
   }
   a {
     font-size: 20px;
+    padding: 3px;
     color: ${props => props.theme.colors.text};
     &:hover{
         font-size: 22px;
