@@ -4,6 +4,8 @@
 
 ![em desenvolvimento](public/img/projects/default.jpg)
 
+# futuras mudanças
+    [] adicionar a opção tema do sistema
 
  
 # Demonstração

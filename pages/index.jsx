@@ -11,6 +11,7 @@ import dark from "../src/styles/themes/dark";
 
 /*styles globais */
 import { Global } from "../src/styles/global"
+//import styled from "styled-components"
 
 /*modules react */
 import { useState } from "react";
@@ -18,6 +19,7 @@ import { useState } from "react";
 /*modules nookies responsável por salvar a definição de tema */
 import { setCookie, parseCookies } from "nookies";
 import Projects from "../src/patterns/projects";
+import { redirect } from "next/dist/server/api-utils";
 
 
 export default function Home(props) {
@@ -36,6 +38,8 @@ export default function Home(props) {
     maxAge: 86400 * 30,
     path: "/"
    })
+
+  // const Cont = styled.main`min-height: 83.3vh;`
 
     return (
         <ThemeProvider theme={theme}>

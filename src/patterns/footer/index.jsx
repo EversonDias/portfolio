@@ -5,18 +5,20 @@ const Container = styled.footer`
   position: absolute;
   bottom: 0;
   background-color: ${props => props.theme.colors.header};
-  height: 40px;
+  height: 45px;
   width: 100%;
   text-align: center;
   
   #container{
     display: flex;
     justify-content: center;
+  }
+  p {
     color: ${props => props.theme.colors.text};
   }
   a {
     font-size: 20px;
-    padding: 3px;
+    color: ${props => props.theme.colors.text};
     &:hover{
         font-size: 22px;
         color: ${props => props.theme.colors.highlights} ;
@@ -28,7 +30,7 @@ const Container = styled.footer`
 export default function Footer(){
     return(
         <Container>
-            <p >desenvolvido por Everson Dias</p>
+            <p>Desenvolvido por Everson Dias</p>
             <div id='container'>
                 <div>
                     <a href="https://www.linkedin.com/in/eversondiasdev/" target="_black" ><FaLinkedin/></a>

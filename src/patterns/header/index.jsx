@@ -24,7 +24,7 @@ export const Header = ({ themeChange }) => {
     
     return (
         <Container>
-            <h1>My Portfolio</h1>
+            <h1>My Site</h1>
             <Switch
                 onChange={themeChange}
                 checked={title === 'dark'}
