@@ -25,6 +25,7 @@ export default function NavBar({ themeChange }) {
     const { colors, title} = useContext(ThemeContext)
     return (
         <Container>
+            <Link href="/projects">Projects</Link>
             <Link href="/about">About</Link>
             <Switch
                 onChange={themeChange}

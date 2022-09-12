@@ -11,7 +11,7 @@ const Container = styled.div`
 export const NavHome = () => {
     return (
         <Container>
-            <Link href="/home">Dias Dev</Link>
+            <Link href="/">Dias Dev</Link>
         </Container>
 
     )

@@ -1,9 +1,9 @@
-import NextHead from "../../src/components/head";
+import NextHead from "../../src/components/nextHead";
 
 export default function About() {
     return (
         <>
-        <NextHead />
+        <NextHead text="About"/>
             <h1>about</h1>
         </>
     )
