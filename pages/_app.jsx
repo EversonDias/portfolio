@@ -36,9 +36,8 @@ export default function MyApp(props) {
     return (
         <ThemeProvider theme={theme}>
             <Global />
-            
             <Header themeChange={themeChange} />
-            <props.Component {...props.pageProps} />
+            <props.Component {...props.pageProps}/>
             <Footer />
         </ThemeProvider>
     )

@@ -16,10 +16,7 @@ const Container = styled.footer`
   }
   p {
     color: ${props => props.theme.colors.text};
-    margin-top: 5px;
-  }
-  p{
-    margin-top: 5px;
+    margin-top: 10px;
   }
   a {
     font-size: 20px;
