@@ -1,4 +1,4 @@
-import Data from '../../../data/db'
+import Data from '../../../data/projects'
 import CardProjects from '../../components/cardProjects'
 import styled from 'styled-components'
 
