@@ -3,12 +3,10 @@ import Projects from "../../src/patterns/projects";
 
 export default function Home() {
     return (
-        <> 
-        <NextHead text="Home"/>
-            <main>
-                <Projects />
-            </main> 
-        </>
+        <main>
+            <NextHead text="Home" />
+            <Projects />
+        </main>
     )
 }
 
