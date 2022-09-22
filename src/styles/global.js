@@ -12,6 +12,8 @@ para passar as cores já pre-definidas dos temas utilizo uma expressão js para 
 */
 body {
     background: ${props => props.theme.colors.background};
-
+}
+html, body, main{
+    min-height: 87vh;
 }
 `;

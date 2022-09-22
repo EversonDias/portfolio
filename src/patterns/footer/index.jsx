@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import {FaLinkedin, FaGithubSquare } from 'react-icons/fa'
 
 const Container = styled.footer`
-  position: absolute;
-  bottom: 0;
   background-color: ${props => props.theme.colors.header};
   height: 58px;
   width: 100%;

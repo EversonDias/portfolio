@@ -17,10 +17,11 @@ const Container = styled.picture`
 
     }
 `
-export default function CardProjects({ src, title }) {
+export default function CardImg({ src, title }) {
     return (
         <Container>
-                <Image id='img'
+                <Image 
+                id='img'
                     layout='fill'
                     src={src}
                     alt={title}

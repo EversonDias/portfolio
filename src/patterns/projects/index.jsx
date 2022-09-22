@@ -1,6 +1,6 @@
 import Data from '../../../data/projects'
-import CardProjects from '../../components/cardProjects'
 import styled from 'styled-components'
+import CardImg from '../../components/cardImg';
 
 const Container = styled.section`
     display: flex;
@@ -34,7 +34,7 @@ export default function Projects() {
             {DataBase.map((e) => (
                 <a href={e.link} target='_black'>
                     <h1>{e.title}</h1>
-                    <CardProjects
+                    <CardImg
                         src={e.img}
                         title={e.title}
                     />

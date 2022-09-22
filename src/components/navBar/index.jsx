@@ -26,6 +26,7 @@ export default function NavBar({ themeChange }) {
     return (
         <Container>
             <Link href="/projects">Projects</Link>
+            <Link href="/about">Sobre</Link>
             <Switch
                 onChange={themeChange}
                 checked={title === 'dark'}

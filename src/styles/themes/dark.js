@@ -4,10 +4,10 @@ export default {
     title: 'dark',
 
     colors: {
-        background: '#08090A',
+        background: '#181818',
         title: '#FFFFFF',
         text: '#FFFFFF',
-        highlights: '#048ABF',
-        header: '#002540'
+        highlights: '#181818',
+        header: '#202020'
     },
 };

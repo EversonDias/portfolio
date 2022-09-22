@@ -5,7 +5,7 @@ export default {
 
     colors: {
         background: '#FFFFFF',
-        title: '#1C3E78',
+        title: '#000000',
         text: '#000000',
         highlights: '#1C3E78',
         header: '#38BBCE'

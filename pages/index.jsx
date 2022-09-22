@@ -1,15 +1,11 @@
 import NextHead from "../src/components/nextHead";
-import Perfil from "../src/components/perfil";
-
-
-
 
 export default function HomePage() {
     return (
-        <>
+        <main>
             <NextHead text="My Site" />
-            <Perfil/>
-        </>
+            <h1>Home Page</h1>
+        </main>
 
     )
 }
