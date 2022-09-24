@@ -3,13 +3,11 @@ import styled from "styled-components"
 const Container = styled.article`
   background-color: ${props => props.theme.colors.header};
   color: ${props => props.theme.colors.text};
+  font-family: ${props => props.theme.font.text};
   width: 80vw;
-  margin: 2rem auto;
+  margin: 0 auto 1rem;
   padding: 1rem;
   border-radius: 6px;
-  h1{
-    text-align: center;
-  }
   p{
     text-indent: 1rem;
     margin-top: 1rem;
@@ -20,9 +18,7 @@ const Container = styled.article`
 export default function CardAbout() {
   return (
     <Container>
-      <h1>Olá, Seja bem-vindo.</h1>
-
-      <p>Tenho 27 anos. Moro em São Paulo, Capital desde os meus 3 anos, sou mais um baiano paulista em meio de tantos.</p>
+      <p>Tenho 27 anos. Moro em São Paulo Capital desde os meus 3 anos, sou mais um baiano paulista em meio de tantos.</p>
 
       <p>Sou Apaixonado por futebol sofro pelo São Paulo FC 🥲</p>
 

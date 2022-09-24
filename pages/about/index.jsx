@@ -1,13 +1,22 @@
 import Perfil from "../../src/components/perfil";
 import NextHead from "../../src/components/nextHead";
 import CardAbout from "../../src/components/CardAbout";
+import styled from "styled-components";
+
+const Container = styled.main`
+  div{
+    
+  }
+`
 
 export default function About(){
   return(
-      <main>
+      <Container>
         <NextHead text="Sobre" />
         <Perfil />
-        <CardAbout />
-      </main>
+        <div>
+          <CardAbout />
+        </div>
+      </Container>
   )
 }

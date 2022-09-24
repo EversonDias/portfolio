@@ -14,5 +14,9 @@ export default {
         title: 'Alfa Slab One',
         text: 'Bentham',
         description: 'Koulen'
+    },
+    gradient:{
+        primary: '#6e6e6e00',
+        secondary: '#33312E'
     }
 };

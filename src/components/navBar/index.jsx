@@ -21,7 +21,6 @@ const Container = styled.nav`
             color: ${props => props.theme.colors.highlights};
         }
     }
-
 `;
 
 export default function NavBar({ themeChange }) {
