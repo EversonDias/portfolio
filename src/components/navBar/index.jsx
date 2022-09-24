@@ -14,15 +14,18 @@ const Container = styled.nav`
     display: flex;
     align-items: center;
     a {
-        margin-right: 20px;
+        margin-right: 1.2rem;
         text-decoration: none;
-        color: ${props => props.theme.colors.text};
+        color: ${props => props.theme.colors.title};
+        &:hover{
+            color: ${props => props.theme.colors.highlights};
+        }
     }
 
 `;
 
 export default function NavBar({ themeChange }) {
-    const { colors, title} = useContext(ThemeContext)
+    const { colors, title } = useContext(ThemeContext)
     return (
         <Container>
             <Link href="/projects">Projects</Link>
@@ -37,7 +40,7 @@ export default function NavBar({ themeChange }) {
                 handleDiameter={20}
                 offColor={colors.highlights}
                 onColor={colors.highlights}
-            />  
+            />
         </Container>
 
     )
