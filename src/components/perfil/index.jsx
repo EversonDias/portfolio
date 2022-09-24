@@ -16,6 +16,7 @@ section{
     font-family: ${props => props.theme.font.title};
     align-items: center;
     justify-content: space-around;
+    padding-top: 2rem;
     h1{
         font-size: 7rem;
         color: ${props => props.theme.colors.background};
@@ -45,6 +46,7 @@ export default function Perfil() {
                     alt="foto de perfil 3x4 do desenvolvedor do site Everson Dias em um escritório"
                     width={500}
                     height={500}
+                    quality={100}
                 />
             </section>
         </Container>
