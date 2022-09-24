@@ -10,4 +10,9 @@ export default {
         highlights: '#1C3E78',
         header: '#38BBCE'
     },
+    font: {
+        title: 'Alfa Slab One',
+        text: 'Bentham',
+        description: 'Koulen'
+    }
 };

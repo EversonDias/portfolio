@@ -2,6 +2,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const Global = createGlobalStyle`
+/* import de fintes css */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bentham&family=Koulen&display=swap');
+
 * {
     margin: 0;
     padding: 0;

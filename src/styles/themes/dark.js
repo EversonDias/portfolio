@@ -6,8 +6,13 @@ export default {
     colors: {
         background: '#181818',
         title: '#FFFFFF',
-        text: '#FFFFFF',
-        highlights: '#181818',
+        text: '#B9A394',
+        highlights: '#62236A',
         header: '#202020'
     },
+    font: {
+        title: 'Alfa Slab One',
+        text: 'Bentham',
+        description: 'Koulen'
+    }
 };

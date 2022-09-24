@@ -4,8 +4,7 @@ export default function HomePage() {
     return (
         <main>
             <NextHead text="My Site" />
-            <h1>Home Page</h1>
+            <div></div>
         </main>
-
     )
 }

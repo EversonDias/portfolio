@@ -1,8 +1,7 @@
 
 import NavBar from "../../components/navBar"
-
 import styled from "styled-components"
-import { NavHome } from "../../components/navHome"
+import Logo from "../../components/logo"
 
 /*style do container e toda aplicação dentro dele */
 const Container = styled.header`
@@ -19,7 +18,7 @@ export const Header = ({ themeChange }) => {
 
     return (
         <Container>
-            <NavHome />
+            <Logo href="/"/>
             <NavBar themeChange={themeChange} />
         </Container>
     )

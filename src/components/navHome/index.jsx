@@ -1,5 +1,5 @@
-import Link from "next/link"
 import styled from "styled-components"
+
 
 const Container = styled.div`
     a{
@@ -11,7 +11,7 @@ const Container = styled.div`
 export const NavHome = () => {
     return (
         <Container>
-            <Link href="/">Dias Dev</Link>
+
         </Container>
 
     )
