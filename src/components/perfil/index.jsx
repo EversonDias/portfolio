@@ -15,8 +15,10 @@ section{
     background-image: linear-gradient(to top, ${props => props.theme.gradient.primary}, ${props => props.theme.gradient.secondary});
     font-family: ${props => props.theme.font.title};
     align-items: center;
-    justify-content: space-around;
+
     padding-top: 2rem;
+
+    
     h1{
         font-size: 7rem;
         color: ${props => props.theme.colors.background};
@@ -24,26 +26,38 @@ section{
     }
     h2{
         font-size: 4rem;
-        color: ${props => props.theme.colors.highlights};
+        color: ${props => props.theme.colors.background};
         text-shadow: 2px 2px 4px black;
+    }
+    .highlights{
+        color: ${props =>props.theme.colors.highlights};
+    }
+}
+.about{
+    justify-content: space-around;
+}
+.homePage{
+    justify-content: space-between;
+    h1, h2{
+        margin-left: 10rem;
     }
 }
 
 `
 
-export default function Perfil() {
+export default function Perfil({ title, description='', highlights='', alt, src, style}) {
     const tecnologias = Data
 
     return (
         <Container>
-            <section>
+            <section className={style}>
                 <div>
-                    <h1>About</h1>
-                    <h2>Everson Dias</h2>
+                    <h1>{title}</h1>
+                    <h2>{description} <span className='highlights'>{highlights}</span></h2>
                 </div>
                 <Image
-                    src="/img/perfil/about.png"
-                    alt="foto de perfil 3x4 do desenvolvedor do site Everson Dias em um escritório"
+                    src={src}
+                    alt={alt}
                     width={500}
                     height={500}
                     quality={100}
