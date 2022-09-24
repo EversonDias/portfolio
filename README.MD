@@ -1,31 +1,18 @@
+# Tecnologias
+![react.js](/public/img/readme/React.js.svg)![next.js](/public/img/readme/Next.js.svg)![nookies](/public/img/readme/Nookies.svg)![react-icons](/public/img/readme/React-icons.svg)![react-switch](/public/img/readme/React-switch.svg)![styled-components](/public/img/readme/Styled-components.svg)
+
 # Projeto em desenvolvimento com next.js
-[![Portfolio](public/img/readme/SitePortfolio.svg)](https://portfolio-eversondias.vercel.app/)
+[![site](/public/img/readme/MySite.svg)](https://portfolio-eversondias.vercel.app/)
 
 ![em desenvolvimento](public/img/projects/default.jpg)
 
-# futuras mudanças
-    [] adicionar a opção tema do sistema
+## Requisitos da aplicação
 
- 
-# Demonstração
-![demo](public/img/readme/demo.gif)
+### Requisitos funcionais
+- vai ser possível acessar os meus projetos
+- vai ser possível trocar o tema
+- vai ser possível conhecer um poco da minha historia
 
-> library
-    
-    styled-Components
-    react-Switch
-    react
-    nookies
+### Requisitos não-funcionais
 
-> Framework
-    
-    next.js
-
-> compiler
-    
-    node.js
-    babel
-
-> linguagen
-    
-    JavaScript
+### Regras de negócios
