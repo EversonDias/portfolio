@@ -8,23 +8,24 @@ import Image from "next/image";
 //   padding: 1rem;
 //   background-color: ${props => props.theme.colors.header};
   
-//   picture{
+//   .picture{
 //     display: flex;
 //     flex-direction: column;
 //     text-align: center;
 //     width: 40vw;
-//     h2{
+    
+    
+//   }
+//   .h2{
 //     color: ${props => props.theme.colors.highlights};
 //     font-family: ${props => props.theme.font.title};
 //     font-size: 2rem;
 //     padding: 1rem;
 //   }
-//     .img{
+//   .img{
 //     margin: auto;
 //   }
-//   }
-  
-//   button{
+//   .button{
 //     width: 100%;
 //     height: 2.5rem;
 //     margin-top: 0.5rem;
@@ -36,13 +37,14 @@ import Image from "next/image";
 //     font-size: 1.5rem;
 //   }
 // `;
-import styles from './styles.module.css';
+// import styles from './styles.module.css';
+import { Container } from "./styled";
 export function CardHome({ tech }) {
   return (
-    <section className={styles.section}>
-      <picture className={styles.picture}>
-        <h2 className={styles.h2}>Web Developer</h2>
-        <div className={styles.img}>
+    <Container>
+      <picture className='picture'>
+        <h2 className='h2'>Web Developer</h2>
+        <div className='img'>
           <Image
             src='/img/perfil/programador.svg'
             alt='pessoa atrás de um computador com funde de um history de commits do github'
@@ -53,8 +55,8 @@ export function CardHome({ tech }) {
         </div>
       </picture >
       <div>
-        {tech.map((e) => (<button className={styles.button}>{e}</button>))}
+        {tech.map((e) => (<button className='button'>{e}</button>))}
       </div>
-    </section>
+    </Container>
   )
 }
