@@ -9,25 +9,60 @@ h1{
     margin: 20px;
     color: ${props => props.theme.colors.title};
 }
-.img{
-    border-radius: 50%;
+
+section{
+    display: flex;
+    background-image: linear-gradient(to top, ${props => props.theme.gradient.primary}, ${props => props.theme.gradient.secondary});
+    font-family: ${props => props.theme.font.title};
+    align-items: center;
+
+    padding-top: 2rem;
+
+    
+    h1{
+        font-size: 7rem;
+        color: ${props => props.theme.colors.background};
+        text-shadow: 2px 2px 4px black;
+    }
+    h2{
+        font-size: 4rem;
+        color: ${props => props.theme.colors.background};
+        text-shadow: 2px 2px 4px black;
+    }
+    .highlights{
+        color: ${props =>props.theme.colors.highlights};
+    }
 }
+.about{
+    justify-content: space-around;
+}
+.homePage{
+    justify-content: space-between;
+    h1, h2{
+        margin-left: 10rem;
+    }
+}
+
 `
 
-export default function Perfil() {
+export default function Perfil({ title, description='', highlights='', alt, src, style}) {
     const tecnologias = Data
 
     return (
         <Container>
-            <h1>Everson Dias</h1>
-            <Image
-                className="img"
-                layout="fixed"
-                src="/img/perfil/perfil.jpeg"
-                alt="foto de perfil 3x4 do desenvolvedor do site Everson Dias em um escritório"
-                width={200}
-                height={200}
-            />
+            <section className={style}>
+                <div>
+                    <h1>{title}</h1>
+                    <h2>{description} <span className='highlights'>{highlights}</span></h2>
+                </div>
+                <Image
+                    src={src}
+                    alt={alt}
+                    width={500}
+                    height={500}
+                    quality={100}
+                />
+            </section>
         </Container>
     )
 }
