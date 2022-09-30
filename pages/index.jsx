@@ -3,7 +3,7 @@ import Perfil from "../src/components/perfil";
 import styled from "styled-components"
 import Image from "next/image";
 
-const Container = styled.section`
+const Section = styled.section`
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -59,7 +59,7 @@ export default function HomePage() {
                 description="I'm"
                 highlights="Dias"
             />
-            <Container>
+            <Section>
                 <picture>
                     <h2>Web Developer</h2>
                     <div className='img'>
@@ -75,7 +75,7 @@ export default function HomePage() {
                 <ul >
                     {tech.map((e) => (<li className="button">{e}</li>))}
                 </ul>
-            </Container>
+            </Section>
         </main>
     )
 }
