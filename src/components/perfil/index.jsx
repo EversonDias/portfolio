@@ -1,54 +1,67 @@
+import Image from "next/image";
 import styled from "styled-components";
 import Data from '../../../data/tecnologias'
 
 const Container = styled.section`
 text-align: center;
-display: flex;
-flex-direction: column;
 h1{
     font-size: 40px;
     margin: 20px;
     color: ${props => props.theme.colors.title};
 }
-#perfil{
-    border-radius: 50%;
-    border: solid 4px ${props => props.theme.colors.highlights};
-    width: 300px;
-    margin: auto;
-}
-picture{
-    margin: 50px auto;
-    background: ${props => props.theme.colors.header};
-    width: 700px;
-    border-radius: 6px;
 
-    h2{
-        color: ${props => props.theme.colors.title};;
-        margin-top: 20px;
+section{
+    display: flex;
+    background: transparent;
+    font-family: ${props => props.theme.font.title};
+    align-items: center;
+    padding-top: 2rem;
+
+    
+    h1{
+        font-size: 7rem;
+        color: ${props => props.theme.colors.background};
+        text-shadow: 2px 2px 4px black;
     }
-    img{
-        margin: 10px 5px 20px 5px;
-        width: 50px;
+    h2{
+        font-size: 4rem;
+        color: ${props => props.theme.colors.background};
+        text-shadow: 2px 2px 4px black;
+    }
+    .highlights{
+        color: ${props =>props.theme.colors.highlights};
+    }
+}
+.about{
+    justify-content: space-around;
+}
+.homePage{
+    justify-content: space-between;
+    h1, h2{
+        margin-left: 20rem;
     }
 }
 
 `
 
-export default function Perfil() {
-const tecnologias = Data
+export default function Perfil({ title, description='', highlights='', alt, src, style}) {
+    const tecnologias = Data
 
     return (
         <Container>
-            <h1>Everson Dias</h1>
-            <img id="perfil" src="https://avatars.githubusercontent.com/u/108692716?v=4" alt="foto de perfil everson dias" />
-
-            <picture>
-                <h2>Tecnologias</h2>
-                {tecnologias.map((e)=> (
-                    <img src={e.url} alt={e.name}/>
-                ))}
-            </picture>
-
+            <section className={style}>
+                <div>
+                    <h1>{title}</h1>
+                    <h2>{description} <span className='highlights'>{highlights}</span></h2>
+                </div>
+                <Image
+                    src={src}
+                    alt={alt}
+                    width={500}
+                    height={500}
+                    quality={100}
+                />
+            </section>
         </Container>
     )
 }

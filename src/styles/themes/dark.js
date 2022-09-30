@@ -4,10 +4,16 @@ export default {
     title: 'dark',
 
     colors: {
-        background: '#08090A',
+        background: '#181818',
         title: '#FFFFFF',
-        text: '#FFFFFF',
-        highlights: '#048ABF',
-        header: '#002540'
+        text: '#B9A394',
+        highlights: '#62236A',
+        header: '#202020',
+        secondary: '#33312E'
+    },
+    font: {
+        title: 'Alfa Slab One',
+        text: 'Bentham',
+        description: 'Koulen'
     },
 };
