@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import NextHead from "../src/components/nextHead";
 import Perfil from "../src/components/perfil";
+import { CardHome } from "../src/patterns/cardHome";
 
 export default function HomePage() {
     return (
@@ -14,6 +15,7 @@ export default function HomePage() {
                 description="I'm"
                 highlights="Dias"
             />
+            <CardHome tech={['HTML', 'CSS', 'JavaScript', 'React.js', 'Next.js', 'React Native', 'Python']}/>
         </main>
     )
 }

@@ -5,18 +5,15 @@ export default {
 
     colors: {
         background: '#FFFFFF',
-        title: '#000000',
-        text: '#000000',
+        title: '#fff',
+        text: '#353A47',
         highlights: '#1C3E78',
-        header: '#38BBCE'
+        header: '#38BBCE',
+        secondary: '#9BEFFC'
     },
     font: {
         title: 'Alfa Slab One',
         text: 'Bentham',
         description: 'Koulen'
-    },
-    gradient:{
-        primary: '#fff',
-        secondary: '#6E6E6E'
     }
 };

@@ -9,7 +9,7 @@ const Container = styled.header`
         width: 100%;
         z-index: 100;
         background: ${props => props.theme.colors.header};
-        opacity: 70%;
+        opacity: 90%;
         height: 60px;
         display: flex;
         justify-content: space-between;

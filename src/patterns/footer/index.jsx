@@ -4,7 +4,6 @@ import Logo from '../../components/logo';
 
 const Container = styled.footer`
   background-color: ${props => props.theme.colors.header};
-
   width: 100%;
   text-align: center;
   color: ${props => props.theme.colors.title};

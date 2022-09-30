@@ -4,7 +4,7 @@
 # Projeto em desenvolvimento com next.js
 [![site](/public/img/readme/MySite.svg)](https://portfolio-eversondias.vercel.app/)
 
-![em desenvolvimento](public/img/projects/default.jpg)
+![em desenvolvimento](/public/img/readme/default.jpg)
 
 ## Requisitos da aplicação
 

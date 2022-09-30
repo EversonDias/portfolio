@@ -12,7 +12,7 @@ const Container = styled.section`
         font-family: ${props =>props.theme.font.title};
         color: ${props => props.theme.colors.highlights};
         text-decoration: none;
-        font-size: 0.7rem;
+        font-size: 1.5rem;
         h1{
             margin-bottom: 1rem;
         }
@@ -22,7 +22,6 @@ const Container = styled.section`
             margin:auto;
             height: 200px;
             background-color: ${props =>props.theme.colors.header};
-            width: 90vw;
             border-radius: 10px;
             box-shadow: 2px 2px 4px black;
             transition: 500ms;

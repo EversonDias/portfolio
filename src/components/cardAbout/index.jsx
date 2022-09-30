@@ -4,14 +4,15 @@ const Container = styled.article`
   background-color: ${props => props.theme.colors.header};
   color: ${props => props.theme.colors.text};
   font-family: ${props => props.theme.font.text};
-  width: 80vw;
   margin: 0 auto 1rem;
   padding: 1rem;
   border-radius: 6px;
+  width: 90%;
   p{
     text-indent: 1rem;
     margin-top: 1rem;
     line-height: 1.5rem;
+    font-size: 1.3rem;
   }
 `
 
@@ -20,7 +21,7 @@ export default function CardAbout() {
     <Container>
       <p>Tenho 27 anos. Moro em São Paulo Capital desde os meus 3 anos, sou mais um baiano paulista em meio de tantos.</p>
 
-      <p>Sou Apaixonado por futebol sofro pelo São Paulo FC 🥲</p>
+      <p>Sou Apaixonado por futebol sofro pelo São Paulo FC</p>
 
       <p>sou mais caseiro que tartaruga 🐢, vira e mexe jogo um FIFA 🎮 e quando fico com raiva, vou jogar o PES ( Efootbol ) para me lembrar quanto FIFA é melhor kkkk</p>
 

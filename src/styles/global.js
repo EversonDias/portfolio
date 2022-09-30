@@ -14,6 +14,11 @@ body {
     background: ${props => props.theme.colors.background};
 }
 html, body, main{
-    min-height: 87vh;
+    min-height: 90vh;
+}
+main{
+    background: ${props => props.theme.colors.secondary};
+    margin: auto;
+    width: 80vw;
 }
 `;
