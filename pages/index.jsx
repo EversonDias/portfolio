@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import NextHead from "../src/components/nextHead";
 import Perfil from "../src/components/perfil";
 import { CardHome } from "../src/patterns/cardHome";

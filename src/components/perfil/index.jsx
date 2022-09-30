@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styled from "styled-components";
-import Data from '../../../data/tecnologias'
 
 const Container = styled.section`
 text-align: center;
@@ -45,7 +44,6 @@ section{
 `
 
 export default function Perfil({ title, description='', highlights='', alt, src, style}) {
-    const tecnologias = Data
 
     return (
         <Container>
