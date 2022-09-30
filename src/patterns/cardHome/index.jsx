@@ -1,3 +1,4 @@
+import { STRING_LITERAL_DROP_BUNDLE } from "next/dist/shared/lib/constants";
 import Image from "next/image";
 import styled from "styled-components"
 
@@ -13,18 +14,16 @@ const Container = styled.section`
     font-size: 2rem;
     padding: 1rem;
   }
-  .container{
+  picture{
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  .divider{
     width: 40vw;
   }
   .img{
     margin: auto;
   }
-  .button{
+  button{
     width: 100%;
     height: 2.5rem;
     margin-top: 0.5rem;
@@ -40,9 +39,9 @@ const Container = styled.section`
 export function CardHome({ tech }) {
   return (
     <Container>
-      <picture className="divider container">
+      <picture>
         <h2>Web Developer</h2>
-        <div className='img'>
+        <div className={styled.img}>
           <Image
             src='/img/perfil/programador.svg'
             alt='pessoa atrás de um computador com funde de um history de commits do github'
@@ -52,9 +51,8 @@ export function CardHome({ tech }) {
           />
         </div>
       </picture >
-
       <div>
-        {tech.map((e) => (<button className="button" >{e}</button>))}
+        {tech.map((e) => (<button>{e}</button>))}
       </div>
     </Container>
   )
