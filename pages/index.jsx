@@ -20,23 +20,29 @@ const Container = styled.section`
     font-family: ${props => props.theme.font.title};
     font-size: 2rem;
     padding: 1rem;
-    
   }
   .img{
     margin: auto;
   }
   }
-  button{
+  ul{
+    list-style: none;
+    width: 30vw;
+    text-align: center;
+}
+  .button{
     width: 100%;
-    height: 2.5rem;
+    padding: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 1rem;
     border: none;
     color: ${props => props.theme.colors.text};
     font-family: ${props => props.theme.font.text};
-    background-color: ${props => props.theme.colors.background};
     font-size: 1.5rem;
-  }
+    background-color: ${props => props.theme.colors.background};
+
+    }
+
 `;
 
 let tech = ['HTML', 'CSS', 'JavaScript', 'React.js', 'Next.js', 'React Native', 'Python']
@@ -66,9 +72,9 @@ export default function HomePage() {
                         />
                     </div>
                 </picture >
-                <div>
-                    {tech.map((e) => (<button>{e}</button>))}
-                </div>
+                <ul >
+                    {tech.map((e) => (<li className="button">{e}</li>))}
+                </ul>
             </Container>
         </main>
     )
