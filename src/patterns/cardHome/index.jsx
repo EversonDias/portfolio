@@ -1,48 +1,48 @@
 import Image from "next/image";
-import styled from "styled-components"
+// import styled from "styled-components"
 
-const Container = styled.section`
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  padding: 1rem;
-  background-color: ${props => props.theme.colors.header};
+// const Container = styled.section`
+//   display: flex;
+//   justify-content: space-between;
+//   margin: auto;
+//   padding: 1rem;
+//   background-color: ${props => props.theme.colors.header};
   
-  picture{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 40vw;
-    h2{
-    color: ${props => props.theme.colors.highlights};
-    font-family: ${props => props.theme.font.title};
-    font-size: 2rem;
-    padding: 1rem;
-  }
-    .img{
-    margin: auto;
-  }
-  }
+//   picture{
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+//     width: 40vw;
+//     h2{
+//     color: ${props => props.theme.colors.highlights};
+//     font-family: ${props => props.theme.font.title};
+//     font-size: 2rem;
+//     padding: 1rem;
+//   }
+//     .img{
+//     margin: auto;
+//   }
+//   }
   
-  button{
-    width: 100%;
-    height: 2.5rem;
-    margin-top: 0.5rem;
-    border-radius: 1rem;
-    border: none;
-    color: ${props => props.theme.colors.text};
-    font-family: ${props => props.theme.font.text};
-    background-color: ${props => props.theme.colors.background};
-    font-size: 1.5rem;
-  }
-`;
-
+//   button{
+//     width: 100%;
+//     height: 2.5rem;
+//     margin-top: 0.5rem;
+//     border-radius: 1rem;
+//     border: none;
+//     color: ${props => props.theme.colors.text};
+//     font-family: ${props => props.theme.font.text};
+//     background-color: ${props => props.theme.colors.background};
+//     font-size: 1.5rem;
+//   }
+// `;
+import styles from './styles.module.css';
 export function CardHome({ tech }) {
   return (
-    <Container>
-      <picture>
-        <h2>Web Developer</h2>
-        <div className={styled.img}>
+    <section className={styles.section}>
+      <picture className={styles.picture}>
+        <h2 className={styles.h2}>Web Developer</h2>
+        <div className={styles.img}>
           <Image
             src='/img/perfil/programador.svg'
             alt='pessoa atrás de um computador com funde de um history de commits do github'
@@ -53,8 +53,8 @@ export function CardHome({ tech }) {
         </div>
       </picture >
       <div>
-        {tech.map((e) => (<button>{e}</button>))}
+        {tech.map((e) => (<button className={styles.button}>{e}</button>))}
       </div>
-    </Container>
+    </section>
   )
 }
