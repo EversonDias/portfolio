@@ -12,10 +12,9 @@ h1{
 
 section{
     display: flex;
-    background-image: linear-gradient(to top, ${props => props.theme.gradient.primary}, ${props => props.theme.gradient.secondary});
+    background: transparent;
     font-family: ${props => props.theme.font.title};
     align-items: center;
-
     padding-top: 2rem;
 
     
@@ -39,7 +38,7 @@ section{
 .homePage{
     justify-content: space-between;
     h1, h2{
-        margin-left: 10rem;
+        margin-left: 20rem;
     }
 }
 

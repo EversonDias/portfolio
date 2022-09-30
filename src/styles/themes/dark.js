@@ -8,15 +8,12 @@ export default {
         title: '#FFFFFF',
         text: '#B9A394',
         highlights: '#62236A',
-        header: '#202020'
+        header: '#202020',
+        secondary: '#33312E'
     },
     font: {
         title: 'Alfa Slab One',
         text: 'Bentham',
         description: 'Koulen'
     },
-    gradient:{
-        primary: '#6e6e6e00',
-        secondary: '#33312E'
-    }
 };

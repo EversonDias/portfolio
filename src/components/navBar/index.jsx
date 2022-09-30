@@ -17,6 +17,8 @@ const Container = styled.nav`
         margin-right: 1.2rem;
         text-decoration: none;
         color: ${props => props.theme.colors.title};
+        font-family: ${props =>props.theme.font.title};
+        font-size: 1.3rem;
         &:hover{
             color: ${props => props.theme.colors.highlights};
             text-shadow: 2px 2px 4x white;
@@ -29,8 +31,8 @@ export default function NavBar({ themeChange }) {
     return (
         <Container>
             <Link href="/projects">Projects</Link>
-            <Link href="/about">Abut</Link>
-            <Link href="/about">Contact</Link>
+            <Link href="/about">About</Link>
+            {/* <Link href="/about">Contact</Link> */}
             <Switch
                 onChange={themeChange}
                 checked={title === 'dark'}
