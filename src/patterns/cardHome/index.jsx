@@ -1,4 +1,3 @@
-import { STRING_LITERAL_DROP_BUNDLE } from "next/dist/shared/lib/constants";
 import Image from "next/image";
 import styled from "styled-components"
 
@@ -8,21 +7,23 @@ const Container = styled.section`
   margin: auto;
   padding: 1rem;
   background-color: ${props => props.theme.colors.header};
-  h2{
-    color: ${props => props.theme.colors.highlights};
-    font-family: ${props => props.theme.font.title};
-    font-size: 2rem;
-    padding: 1rem;
-  }
+  
   picture{
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 40vw;
+    h2{
+    color: ${props => props.theme.colors.highlights};
+    font-family: ${props => props.theme.font.title};
+    font-size: 2rem;
+    padding: 1rem;
   }
-  .img{
+    .img{
     margin: auto;
   }
+  }
+  
   button{
     width: 100%;
     height: 2.5rem;
