@@ -1,13 +1,15 @@
-background-color: ${props => props.theme.colors.header};
-  color: ${props => props.theme.colors.text};
-  font-family: ${props => props.theme.font.text};
+.container {
+  background-color: #202020;
+  color: #B9A394;
+  font-family: 'Bentham';
   margin: 0 auto 1rem;
   padding: 1rem;
   border-radius: 6px;
   width: 90%;
-  p{
-    text-indent: 1rem;
-    margin-top: 1rem;
-    line-height: 1.5rem;
-    font-size: 1.3rem;
-  }
+}
+.p {
+  text-indent: 1rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+}
