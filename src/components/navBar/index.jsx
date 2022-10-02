@@ -5,46 +5,17 @@ import { useContext } from "react"
 import { ThemeContext } from "styled-components"
 
 /*import do botão de traca de tema */
-import Switch from 'react-switch'
-
 import Link from "next/link"
-import styled from "styled-components"
+import styles from './styles.module.css';
 
-const Container = styled.nav`
-    display: flex;
-    align-items: center;
-    a {
-        margin-right: 1.2rem;
-        text-decoration: none;
-        color: ${props => props.theme.colors.title};
-        font-family: ${props =>props.theme.font.title};
-        font-size: 1.3rem;
-        &:hover{
-            color: ${props => props.theme.colors.highlights};
-            text-shadow: 2px 2px 4x white;
-        }
-    }
-`;
-
-export default function NavBar({ themeChange }) {
-    const { colors, title } = useContext(ThemeContext)
+export default function NavBar() {
     return (
-        <Container>
-            <Link href="/projects">Projects</Link>
-            <Link href="/about">About</Link>
+        <nav className={styles.nav}>
+            <Link href="/projects"><a className={styles.a}>Projects</a></Link>
+            <Link href="/about"><a className={styles.a}>About</a></Link>
+
             {/* <Link href="/about">Contact</Link> */}
-            <Switch
-                onChange={themeChange}
-                checked={title === 'dark'}
-                checkedIcon={false}
-                uncheckedIcon={false}
-                height={10}
-                width={40}
-                handleDiameter={20}
-                offColor={colors.highlights}
-                onColor={colors.highlights}
-            />
-        </Container>
+        </nav>
 
     )
 }

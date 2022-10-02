@@ -1,14 +1,11 @@
 import Perfil from "../../src/components/perfil";
 import NextHead from "../../src/components/nextHead";
 import CardAbout from "../../src/components/cardAbout";
-import styled from "styled-components";
 
-const Container = styled.main`
-`
 
 export default function About(){
   return(
-      <Container>
+      <main>
         <NextHead text="Sobre" />
         <Perfil
         style='about'
@@ -18,6 +15,6 @@ export default function About(){
         highlights="Everson Dias"
         />
           <CardAbout />
-      </Container>
+      </main>
   )
 }
