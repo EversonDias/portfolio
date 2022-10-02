@@ -1,23 +1,17 @@
 .nav {
     display: flex;
     align-items: center;
-
-    /* margin-right: 1.2rem;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: 'Alfa Slab One';
-    font-size: 1.3rem; */
 }
 
 .a {
     margin-right: 1.2rem;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--title);
     font-family: 'Alfa Slab One';
     font-size: 1.3rem;
 }
 
 .a:hover {
-    color: #62236A;
+    color: var(--highlights);
     text-shadow: 2px 2px 4x white;
 }

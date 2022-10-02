@@ -1,7 +1,7 @@
 .container {
-  background-color: #202020;
-  color: #B9A394;
-  font-family: 'Bentham';
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-text);
   margin: 0 auto 1rem;
   padding: 1rem;
   border-radius: 6px;

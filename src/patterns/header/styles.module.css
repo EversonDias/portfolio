@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 100;
-  background: #202020;
+  background: var(--header);
   opacity: 90%;
   height: 60px;
   display: flex;

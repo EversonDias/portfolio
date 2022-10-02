@@ -4,25 +4,25 @@
 .h1{
   font-size: 40px;
   margin: 20px;
-  color: #FFFFFF;
+  color: var(--title);
 }
 .h1{
   font-size: 7rem;
-  color: #181818;
+  color: var(--background);
   text-shadow: 2px 2px 4px black;
 }
 .h2{
   font-size: 4rem;
-  color: #181818;
+  color: var(--background);
   text-shadow: 2px 2px 4px black;
 }
 .highlights{
-  color: #62236A;
+  color: var(--highlights);
 }
 .about{
   display: flex;
   background: transparent;
-  font-family: 'Alfa Slab One';
+  font-family: var(--font-title);
   align-items: center;
   padding-top: 2rem;
   justify-content: space-around;
@@ -30,7 +30,7 @@
 .homePage{
   display: flex;
   background: transparent;
-  font-family: 'Alfa Slab One';
+  font-family: var(--font-title);
   align-items: center;
   padding-top: 2rem;
   justify-content: space-between;
