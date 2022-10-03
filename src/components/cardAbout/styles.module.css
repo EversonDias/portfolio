@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--header);
+  color: var(--text);
+  font-family: var(--font-text);
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 90%;
+}
+.p {
+  text-indent: 1rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+}
