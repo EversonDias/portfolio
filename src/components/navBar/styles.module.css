@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.a {
+    margin-right: 1.2rem;
+    text-decoration: none;
+    color: var(--title);
+    font-family: 'Alfa Slab One';
+    font-size: 1.3rem;
+}
+
+.a:hover {
+    color: var(--highlights);
+    text-shadow: 2px 2px 4x white;
+}
+.icon{
+    font-size: 2rem;
+    color: var(--highlights);
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.container{
+  text-align: center;
+}
+.h1{
+  font-size: 40px;
+  margin: 20px;
+  color: var(--title);
+}
+.h1{
+  font-size: 7rem;
+  color: var(--background);
+  text-shadow: 2px 2px 4px black;
+}
+.h2{
+  font-size: 4rem;
+  color: var(--background);
+  text-shadow: 2px 2px 4px black;
+}
+.highlights{
+  color: var(--highlights);
+}
+.about{
+  display: flex;
+  background: transparent;
+  font-family: var(--font-title);
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: space-around;
+}
+.homePage{
+  display: flex;
+  background: transparent;
+  font-family: var(--font-title);
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: space-between;
+  
+}
+.h1, .h2{
+  margin-left: 20rem;
+}

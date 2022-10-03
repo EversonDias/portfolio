@@ -11,7 +11,7 @@ export default function Document() {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
                 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bentham&family=Koulen&display=swap" rel="stylesheet"></link>
                     </Head>
-                    <body>
+                    <body className='dark'>
                         <Main />
                         <NextScript />
                     </body>

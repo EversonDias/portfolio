@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+para passar as cores já pre-definidas dos temas utilizo uma expressão js para passar as props 
+*/
+.light {
+  --background: #FFFFFF;
+  --title: #fff;
+  --text: #353A47;
+  --highlights: #1C3E78;
+  --header: #38BBCE;
+  --secondary: #9BEFFC;
+
+  --font-title: 'Alfa Slab One';
+  --font-text: Bentham;
+  --font-description: Koulen;
+}
+.dark {
+  --background: #181818;
+  --title: #FFFFFF;
+  --text: #B9A394;
+  --highlights: #62236A;
+  --header: #202020;
+  --secondary: #33312E;
+
+  --font-title: 'Alfa Slab One';
+  --font-text: Bentham;
+  --font-description: 'Koulen';
+}
+
+body {
+  background-color: var(--background);
+}
+
+main {
+  background-color: var(--secondary);
+  margin: auto;
+  width: 80vw;
+  min-height: 90vh;
+}
