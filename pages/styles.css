@@ -9,15 +9,15 @@ para passar as cores já pre-definidas dos temas utilizo uma expressão js para 
 */
 .light {
   --background: #FFFFFF;
-  --title: '#fff';
-  --text: '#353A47';
-  --highlights: '#1C3E78';
-  --header: '#38BBCE';
-  --secondary: '#9BEFFC';
+  --title: #fff;
+  --text: #353A47;
+  --highlights: #1C3E78;
+  --header: #38BBCE;
+  --secondary: #9BEFFC;
 
   --font-title: 'Alfa Slab One';
-  --font-text: 'Bentham';
-  --font-description: 'Koulen';
+  --font-text: Bentham;
+  --font-description: Koulen;
 }
 .dark {
   --background: #181818;

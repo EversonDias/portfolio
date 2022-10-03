@@ -15,3 +15,8 @@
     color: var(--highlights);
     text-shadow: 2px 2px 4x white;
 }
+.icon{
+    font-size: 2rem;
+    color: var(--highlights);
+    cursor: pointer;
+}

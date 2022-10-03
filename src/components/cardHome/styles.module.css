@@ -40,6 +40,6 @@
   color: var(--text);
   font-family: var(--font-text);
   font-size: 1.5rem;
-  background-color: var(--background);
+  background-color: var(--secondary);
 
 }
